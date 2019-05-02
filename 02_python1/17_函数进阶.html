@@ -1,0 +1,1359 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>函数进阶 | JWD的python自学教程</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../03_python2/02_类和对象.html" />
+    
+    
+    <link rel="prev" href="../02_python1/16_变量进阶（理解）.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.17"
+        data-chapter-title="函数进阶"
+        data-filepath="02_python1/17_函数进阶.md"
+        data-basepath=".."
+        data-revision="Thu May 02 2019 14:25:59 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        前言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> Linux基础</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_Linux/01_操作系统（科普章节）.html">
+            
+                
+                    <a href="../01_Linux/01_操作系统（科普章节）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        操作系统（科普章节）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_Linux/02_操作系统的发展史（科普章节）.html">
+            
+                
+                    <a href="../01_Linux/02_操作系统的发展史（科普章节）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        操作系统的发展史（科普章节）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_Linux/03_文件和目录（理解）.html">
+            
+                
+                    <a href="../01_Linux/03_文件和目录（理解）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        文件和目录（理解）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01_Linux/04_Ubuntu 图形界面入门.html">
+            
+                
+                    <a href="../01_Linux/04_Ubuntu 图形界面入门.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Ubuntu 图形界面入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="01_Linux/05_常用 Linux 命令的基本使用.html">
+            
+                
+                    <a href="../01_Linux/05_常用 Linux 命令的基本使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        常用 Linux 命令的基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="01_Linux/06_Linux 终端命令格式.html">
+            
+                
+                    <a href="../01_Linux/06_Linux 终端命令格式.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        Linux 终端命令格式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="01_Linux/07_文件和目录常用命令.html">
+            
+                
+                    <a href="../01_Linux/07_文件和目录常用命令.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        文件和目录常用命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="01_Linux/08_远程管理常用命令.html">
+            
+                
+                    <a href="../01_Linux/08_远程管理常用命令.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        远程管理常用命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="01_Linux/09_用户权限常用命令.html">
+            
+                
+                    <a href="../01_Linux/09_用户权限常用命令.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        用户权限常用命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="01_Linux/10_系统信息相关命令.html">
+            
+                
+                    <a href="../01_Linux/10_系统信息相关命令.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        系统信息相关命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="01_Linux/11_其他命令.html">
+            
+                
+                    <a href="../01_Linux/11_其他命令.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                        其他命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="01_Linux/12_vi_终端中的编辑器.html">
+            
+                
+                    <a href="../01_Linux/12_vi_终端中的编辑器.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                        vi—终端中的编辑器
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> Python基础</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_python1/01_认识 Python.html">
+            
+                
+                    <a href="../02_python1/01_认识 Python.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        认识 Python
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_python1/02_第一个 Python 程序.html">
+            
+                
+                    <a href="../02_python1/02_第一个 Python 程序.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        第一个 Python 程序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_python1/03_PyCharm 的初始设置（知道）.html">
+            
+                
+                    <a href="../02_python1/03_PyCharm 的初始设置（知道）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        PyCharm 的初始设置（知道）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_python1/04_多文件项目的演练.html">
+            
+                
+                    <a href="../02_python1/04_多文件项目的演练.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        多文件项目的演练
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02_python1/05_注释.html">
+            
+                
+                    <a href="../02_python1/05_注释.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        注释
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="02_python1/06_算数运算符.html">
+            
+                
+                    <a href="../02_python1/06_算数运算符.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        算数运算符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="02_python1/07_程序执行原理（科普）.html">
+            
+                
+                    <a href="../02_python1/07_程序执行原理（科普）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        程序执行原理（科普）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="02_python1/08_变量的基本使用.html">
+            
+                
+                    <a href="../02_python1/08_变量的基本使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        变量的基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="02_python1/09_变量的命名.html">
+            
+                
+                    <a href="../02_python1/09_变量的命名.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        变量的命名
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="02_python1/10_判断（if）语句.html">
+            
+                
+                    <a href="../02_python1/10_判断（if）语句.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        判断（if）语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="02_python1/11_运算符.html">
+            
+                
+                    <a href="../02_python1/11_运算符.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        运算符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="02_python1/12_循环.html">
+            
+                
+                    <a href="../02_python1/12_循环.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        循环
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="02_python1/13_函数基础.html">
+            
+                
+                    <a href="../02_python1/13_函数基础.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        函数基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="02_python1/14_高级变量类型.html">
+            
+                
+                    <a href="../02_python1/14_高级变量类型.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.14.</b>
+                        
+                        高级变量类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="02_python1/15_综合应用 —— 名片管理系统.html">
+            
+                
+                    <a href="../02_python1/15_综合应用 —— 名片管理系统.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.15.</b>
+                        
+                        综合应用 —— 名片管理系统
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="02_python1/16_变量进阶（理解）.html">
+            
+                
+                    <a href="../02_python1/16_变量进阶（理解）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.16.</b>
+                        
+                        变量进阶（理解）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.17" data-path="02_python1/17_函数进阶.html">
+            
+                
+                    <a href="../02_python1/17_函数进阶.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.17.</b>
+                        
+                        函数进阶
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 面向对象</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_python2/01_面向对象(OOP.html">
+            
+            <span><b>3.1.</b> 面向对象(OOP)基本概念</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_python2/02_类和对象.html">
+            
+                
+                    <a href="../03_python2/02_类和对象.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        类和对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03_python2/03_面相对象基础语法.html">
+            
+                
+                    <a href="../03_python2/03_面相对象基础语法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        面相对象基础语法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03_python2/04_面向对象封装案例.html">
+            
+                
+                    <a href="../03_python2/04_面向对象封装案例.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        面向对象封装案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="03_python2/05_面向对象封装案例 II.html">
+            
+                
+                    <a href="../03_python2/05_面向对象封装案例 II.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        面向对象封装案例 II
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="03_python2/06_私有属性和私有方法.html">
+            
+                
+                    <a href="../03_python2/06_私有属性和私有方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        私有属性和私有方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="03_python2/07_继承.html">
+            
+                
+                    <a href="../03_python2/07_继承.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        继承
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="03_python2/08_多态.html">
+            
+                
+                    <a href="../03_python2/08_多态.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        多态
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="03_python2/09_类属性和类方法.html">
+            
+                
+                    <a href="../03_python2/09_类属性和类方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        类属性和类方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="03_python2/10_单例.html">
+            
+                
+                    <a href="../03_python2/10_单例.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        单例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="03_python2/11_异常.html">
+            
+                
+                    <a href="../03_python2/11_异常.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.11.</b>
+                        
+                        异常
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="03_python2/12_模块和包.html">
+            
+                
+                    <a href="../03_python2/12_模块和包.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.12.</b>
+                        
+                        模块和包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="03_python2/13_文件.html">
+            
+                
+                    <a href="../03_python2/13_文件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.13.</b>
+                        
+                        文件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="03_python2/14_eval函数.html">
+            
+                
+                    <a href="../03_python2/14_eval函数.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.14.</b>
+                        
+                        eval函数
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 项目实战</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_Project/01_项目实战 —— 飞机大战.html">
+            
+                
+                    <a href="../04_Project/01_项目实战 —— 飞机大战.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        项目实战 —— 飞机大战
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_Project/02_pygame 快速入门.html">
+            
+                
+                    <a href="../04_Project/02_pygame 快速入门.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        pygame 快速入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_Project/03_游戏框架搭建.html">
+            
+                
+                    <a href="../04_Project/03_游戏框架搭建.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        游戏框架搭建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_Project/04_游戏背景.html">
+            
+                
+                    <a href="../04_Project/04_游戏背景.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        游戏背景
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_Project/05_敌机出场.html">
+            
+                
+                    <a href="../04_Project/05_敌机出场.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        敌机出场
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="04_Project/06_英雄登场.html">
+            
+                
+                    <a href="../04_Project/06_英雄登场.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        英雄登场
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="04_Project/07_碰撞检测.html">
+            
+                
+                    <a href="../04_Project/07_碰撞检测.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        碰撞检测
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >JWD的python自学教程</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x51FD;&#x6570;&#x8FDB;&#x9636;">&#x51FD;&#x6570;&#x8FDB;&#x9636;</h1>
+<h2 id="&#x76EE;&#x6807;">&#x76EE;&#x6807;</h2>
+<ul>
+<li>&#x51FD;&#x6570;&#x53C2;&#x6570;&#x548C;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x4F5C;&#x7528;</li>
+<li>&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C; &#x8FDB;&#x9636;</li>
+<li>&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570; &#x8FDB;&#x9636;</li>
+<li>&#x9012;&#x5F52;&#x51FD;&#x6570;</li>
+</ul>
+<h2 id="01-&#x51FD;&#x6570;&#x53C2;&#x6570;&#x548C;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x4F5C;&#x7528;">01. &#x51FD;&#x6570;&#x53C2;&#x6570;&#x548C;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x4F5C;&#x7528;</h2>
+<p>&#x51FD;&#x6570;&#x6839;&#x636E; <strong>&#x6709;&#x6CA1;&#x6709;&#x53C2;&#x6570;</strong> &#x4EE5;&#x53CA; <strong>&#x6709;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x503C;</strong>&#xFF0C;&#x53EF;&#x4EE5; <strong>&#x76F8;&#x4E92;&#x7EC4;&#x5408;</strong>&#xFF0C;&#x4E00;&#x5171;&#x6709; <strong>4 &#x79CD;</strong> &#x7EC4;&#x5408;&#x5F62;&#x5F0F;</p>
+<ol>
+<li>&#x65E0;&#x53C2;&#x6570;&#xFF0C;&#x65E0;&#x8FD4;&#x56DE;&#x503C;</li>
+<li>&#x65E0;&#x53C2;&#x6570;&#xFF0C;&#x6709;&#x8FD4;&#x56DE;&#x503C;</li>
+<li>&#x6709;&#x53C2;&#x6570;&#xFF0C;&#x65E0;&#x8FD4;&#x56DE;&#x503C;</li>
+<li>&#x6709;&#x53C2;&#x6570;&#xFF0C;&#x6709;&#x8FD4;&#x56DE;&#x503C;</li>
+</ol>
+<p><img src="media/14993074876434/001_%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E5%92%8C%E8%BF%94%E5%9B%9E%E5%80%BC.png" alt="001_&#x51FD;&#x6570;&#x53C2;&#x6570;&#x548C;&#x8FD4;&#x56DE;&#x503C;"></p>
+<blockquote>
+<p>&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x65F6;&#xFF0C;<strong>&#x662F;&#x5426;&#x63A5;&#x6536;&#x53C2;&#x6570;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x5426;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;</strong>&#xFF0C;&#x662F;&#x6839;&#x636E; <strong>&#x5B9E;&#x9645;&#x7684;&#x529F;&#x80FD;&#x9700;&#x6C42;</strong> &#x6765;&#x51B3;&#x5B9A;&#x7684;&#xFF01;</p>
+</blockquote>
+<ol>
+<li>&#x5982;&#x679C;&#x51FD;&#x6570; <strong>&#x5185;&#x90E8;&#x5904;&#x7406;&#x7684;&#x6570;&#x636E;&#x4E0D;&#x786E;&#x5B9A;</strong>&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5C06;&#x5916;&#x754C;&#x7684;&#x6570;&#x636E;&#x4EE5;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x5230;&#x51FD;&#x6570;&#x5185;&#x90E8;</li>
+<li>&#x5982;&#x679C;&#x5E0C;&#x671B;&#x4E00;&#x4E2A;&#x51FD;&#x6570; <strong>&#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5411;&#x5916;&#x754C;&#x6C47;&#x62A5;&#x6267;&#x884C;&#x7ED3;&#x679C;</strong>&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;</li>
+</ol>
+<h3 id="11-&#x65E0;&#x53C2;&#x6570;&#xFF0C;&#x65E0;&#x8FD4;&#x56DE;&#x503C;">1.1 &#x65E0;&#x53C2;&#x6570;&#xFF0C;&#x65E0;&#x8FD4;&#x56DE;&#x503C;</h3>
+<p>&#x6B64;&#x7C7B;&#x51FD;&#x6570;&#xFF0C;&#x4E0D;&#x63A5;&#x6536;&#x53C2;&#x6570;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x5E94;&#x7528;&#x573A;&#x666F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li><strong>&#x53EA;&#x662F;&#x5355;&#x7EAF;&#x5730;&#x505A;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;</strong>&#xFF0C;&#x4F8B;&#x5982; <strong>&#x663E;&#x793A;&#x83DC;&#x5355;</strong></li>
+<li>&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8; <strong>&#x9488;&#x5BF9;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;</strong>&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<strong>&#x65B0;&#x5EFA;&#x540D;&#x7247;</strong>&#xFF0C;&#x6700;&#x7EC8;&#x7ED3;&#x679C; <strong>&#x8BB0;&#x5F55;&#x5728;&#x5168;&#x5C40;&#x53D8;&#x91CF;</strong> &#x4E2D;</li>
+</ol>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+</blockquote>
+<ul>
+<li>&#x5982;&#x679C;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;&#x4E00;&#x4E2A; <strong>&#x53EF;&#x53D8;&#x7C7B;&#x578B;</strong>&#xFF0C;&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <strong>&#x65B9;&#x6CD5;</strong> &#x4FEE;&#x6539;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x5185;&#x5BB9; &#x2014;&#x2014; <strong>&#x53D8;&#x91CF;&#x7684;&#x5F15;&#x7528;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;</strong></li>
+<li>&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#xFF0C;<strong>&#x4F7F;&#x7528;&#x8D4B;&#x503C;&#x8BED;&#x53E5;</strong> &#x624D;&#x4F1A; <strong>&#x4FEE;&#x6539;&#x53D8;&#x91CF;&#x7684;&#x5F15;&#x7528;</strong></li>
+</ul>
+<h3 id="12-&#x65E0;&#x53C2;&#x6570;&#xFF0C;&#x6709;&#x8FD4;&#x56DE;&#x503C;">1.2 &#x65E0;&#x53C2;&#x6570;&#xFF0C;&#x6709;&#x8FD4;&#x56DE;&#x503C;</h3>
+<p>&#x6B64;&#x7C7B;&#x51FD;&#x6570;&#xFF0C;&#x4E0D;&#x63A5;&#x6536;&#x53C2;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x5E94;&#x7528;&#x573A;&#x666F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x91C7;&#x96C6;&#x6570;&#x636E;&#xFF0C;&#x4F8B;&#x5982; <strong>&#x6E29;&#x5EA6;&#x8BA1;</strong>&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x5F53;&#x524D;&#x7684;&#x6E29;&#x5EA6;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x4F20;&#x9012;&#x4EFB;&#x4F55;&#x7684;&#x53C2;&#x6570;</li>
+</ul>
+<h3 id="13-&#x6709;&#x53C2;&#x6570;&#xFF0C;&#x65E0;&#x8FD4;&#x56DE;&#x503C;">1.3 &#x6709;&#x53C2;&#x6570;&#xFF0C;&#x65E0;&#x8FD4;&#x56DE;&#x503C;</h3>
+<p>&#x6B64;&#x7C7B;&#x51FD;&#x6570;&#xFF0C;&#x63A5;&#x6536;&#x53C2;&#x6570;&#xFF0C;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x5E94;&#x7528;&#x573A;&#x666F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x51FD;&#x6570;&#x5185;&#x90E8;&#x7684;&#x4EE3;&#x7801;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#xFF0C;&#x9488;&#x5BF9; <strong>&#x4E0D;&#x540C;&#x7684;&#x53C2;&#x6570; &#x5904;&#x7406; &#x4E0D;&#x540C;&#x7684;&#x6570;&#x636E;</strong></li>
+<li>&#x4F8B;&#x5982; <strong>&#x540D;&#x7247;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;</strong> &#x9488;&#x5BF9; <strong>&#x627E;&#x5230;&#x7684;&#x540D;&#x7247;</strong> &#x505A; <strong>&#x4FEE;&#x6539;</strong>&#x3001;<strong>&#x5220;&#x9664;</strong> &#x64CD;&#x4F5C;</li>
+</ul>
+<h3 id="14-&#x6709;&#x53C2;&#x6570;&#xFF0C;&#x6709;&#x8FD4;&#x56DE;&#x503C;">1.4 &#x6709;&#x53C2;&#x6570;&#xFF0C;&#x6709;&#x8FD4;&#x56DE;&#x503C;</h3>
+<p>&#x6B64;&#x7C7B;&#x51FD;&#x6570;&#xFF0C;&#x63A5;&#x6536;&#x53C2;&#x6570;&#xFF0C;&#x540C;&#x65F6;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x5E94;&#x7528;&#x573A;&#x666F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x51FD;&#x6570;&#x5185;&#x90E8;&#x7684;&#x4EE3;&#x7801;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#xFF0C;&#x9488;&#x5BF9; <strong>&#x4E0D;&#x540C;&#x7684;&#x53C2;&#x6570; &#x5904;&#x7406; &#x4E0D;&#x540C;&#x7684;&#x6570;&#x636E;</strong>&#xFF0C;&#x5E76;&#x4E14; <strong>&#x8FD4;&#x56DE;&#x671F;&#x671B;&#x7684;&#x5904;&#x7406;&#x7ED3;&#x679C;</strong></li>
+<li>&#x4F8B;&#x5982; <strong>&#x540D;&#x7247;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;</strong> &#x4F7F;&#x7528; <strong>&#x5B57;&#x5178;&#x9ED8;&#x8BA4;&#x503C;</strong> &#x548C; <strong>&#x63D0;&#x793A;&#x4FE1;&#x606F;</strong> &#x63D0;&#x793A;&#x7528;&#x6237;&#x8F93;&#x5165;&#x5185;&#x5BB9;<ul>
+<li>&#x5982;&#x679C;&#x8F93;&#x5165;&#xFF0C;&#x8FD4;&#x56DE;&#x8F93;&#x5165;&#x5185;&#x5BB9;</li>
+<li>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8F93;&#x5165;&#xFF0C;&#x8FD4;&#x56DE;&#x5B57;&#x5178;&#x9ED8;&#x8BA4;&#x503C;</li>
+</ul>
+</li>
+</ul>
+<h2 id="02-&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;-&#x8FDB;&#x9636;">02. &#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C; &#x8FDB;&#x9636;</h2>
+<ul>
+<li>&#x5728;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x5E0C;&#x671B; <strong>&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6267;&#x884C;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x544A;&#x8BC9;&#x8C03;&#x7528;&#x8005;&#x4E00;&#x4E2A;&#x7ED3;&#x679C;</strong>&#xFF0C;&#x4EE5;&#x4FBF;&#x8C03;&#x7528;&#x8005;&#x9488;&#x5BF9;&#x5177;&#x4F53;&#x7684;&#x7ED3;&#x679C;&#x505A;&#x540E;&#x7EED;&#x7684;&#x5904;&#x7406;</li>
+<li><strong>&#x8FD4;&#x56DE;&#x503C;</strong> &#x662F;&#x51FD;&#x6570; <strong>&#x5B8C;&#x6210;&#x5DE5;&#x4F5C;</strong>&#x540E;&#xFF0C;<strong>&#x6700;&#x540E;</strong> &#x7ED9;&#x8C03;&#x7528;&#x8005;&#x7684; <strong>&#x4E00;&#x4E2A;&#x7ED3;&#x679C;</strong></li>
+<li>&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528; <code>return</code> &#x5173;&#x952E;&#x5B57;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;</li>
+<li>&#x8C03;&#x7528;&#x51FD;&#x6570;&#x4E00;&#x65B9;&#xFF0C;&#x53EF;&#x4EE5; <strong>&#x4F7F;&#x7528;&#x53D8;&#x91CF;</strong> &#x6765; <strong>&#x63A5;&#x6536;</strong> &#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;</li>
+</ul>
+<blockquote>
+<p>&#x95EE;&#x9898;&#xFF1A;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6267;&#x884C;&#x540E;&#x80FD;&#x5426;&#x8FD4;&#x56DE;&#x591A;&#x4E2A;&#x7ED3;&#x679C;&#xFF1F;</p>
+</blockquote>
+<h3 id="&#x793A;&#x4F8B;-&#x2014;&#x2014;-&#x6E29;&#x5EA6;&#x548C;&#x6E7F;&#x5EA6;&#x6D4B;&#x91CF;">&#x793A;&#x4F8B; &#x2014;&#x2014; &#x6E29;&#x5EA6;&#x548C;&#x6E7F;&#x5EA6;&#x6D4B;&#x91CF;</h3>
+<ul>
+<li>&#x5047;&#x8BBE;&#x8981;&#x5F00;&#x53D1;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x80FD;&#x591F;&#x540C;&#x65F6;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x6E29;&#x5EA6;&#x548C;&#x6E7F;&#x5EA6;</li>
+<li><strong>&#x5148;&#x5B8C;&#x6210;&#x8FD4;&#x56DE;&#x6E29;&#x5EA6;</strong>&#x7684;&#x529F;&#x80FD;&#x5982;&#x4E0B;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">measure</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x6E29;&#x5EA6;&quot;&quot;&quot;</span>
+
+    print(<span class="hljs-string">&quot;&#x5F00;&#x59CB;&#x6D4B;&#x91CF;...&quot;</span>)
+    temp = <span class="hljs-number">39</span>
+    print(<span class="hljs-string">&quot;&#x6D4B;&#x91CF;&#x7ED3;&#x675F;...&quot;</span>)
+
+    <span class="hljs-keyword">return</span> temp
+
+result = measure()
+print(result)
+</code></pre>
+<ul>
+<li>&#x5728;&#x5229;&#x7528; <strong>&#x5143;&#x7EC4;</strong> &#x5728;&#x8FD4;&#x56DE;&#x6E29;&#x5EA6;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x4E5F;&#x80FD;&#x591F;&#x8FD4;&#x56DE; <strong>&#x6E7F;&#x5EA6;</strong></li>
+<li>&#x6539;&#x9020;&#x5982;&#x4E0B;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">measure</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x6E29;&#x5EA6;&quot;&quot;&quot;</span>
+
+    print(<span class="hljs-string">&quot;&#x5F00;&#x59CB;&#x6D4B;&#x91CF;...&quot;</span>)
+    temp = <span class="hljs-number">39</span>
+    wetness = <span class="hljs-number">10</span>
+    print(<span class="hljs-string">&quot;&#x6D4B;&#x91CF;&#x7ED3;&#x675F;...&quot;</span>)
+
+    <span class="hljs-keyword">return</span> (temp, wetness)
+</code></pre>
+<blockquote>
+<p>&#x63D0;&#x793A;&#xFF1A;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x5143;&#x7EC4;&#xFF0C;&#x62EC;&#x53F7;&#x53EF;&#x4EE5;&#x7701;&#x7565;</p>
+</blockquote>
+<p><strong>&#x6280;&#x5DE7;</strong> </p>
+<ul>
+<li>&#x5728; <code>Python</code> &#x4E2D;&#xFF0C;&#x53EF;&#x4EE5; <strong>&#x5C06;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;</strong> &#x4F7F;&#x7528; <strong>&#x8D4B;&#x503C;&#x8BED;&#x53E5;</strong> &#x540C;&#x65F6;&#x8D4B;&#x503C;&#x7ED9; <strong>&#x591A;&#x4E2A;&#x53D8;&#x91CF;</strong></li>
+<li>&#x6CE8;&#x610F;&#xFF1A;&#x53D8;&#x91CF;&#x7684;&#x6570;&#x91CF;&#x9700;&#x8981;&#x548C;&#x5143;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x6570;&#x91CF;&#x4FDD;&#x6301;&#x4E00;&#x81F4;</li>
+</ul>
+<pre><code class="lang-python">result = temp, wetness = measure()
+</code></pre>
+<h3 id="&#x9762;&#x8BD5;&#x9898;-&#x2014;&#x2014;-&#x4EA4;&#x6362;&#x4E24;&#x4E2A;&#x6570;&#x5B57;">&#x9762;&#x8BD5;&#x9898; &#x2014;&#x2014; &#x4EA4;&#x6362;&#x4E24;&#x4E2A;&#x6570;&#x5B57;</h3>
+<p><strong>&#x9898;&#x76EE;&#x8981;&#x6C42;</strong></p>
+<ol>
+<li>&#x6709;&#x4E24;&#x4E2A;&#x6574;&#x6570;&#x53D8;&#x91CF; <code>a = 6</code>, <code>b = 100</code></li>
+<li>&#x4E0D;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x53D8;&#x91CF;&#xFF0C;<strong>&#x4EA4;&#x6362;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x503C;</strong></li>
+</ol>
+<h4 id="&#x89E3;&#x6CD5;-1-&#x2014;&#x2014;-&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x53D8;&#x91CF;">&#x89E3;&#x6CD5; 1 &#x2014;&#x2014; &#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x53D8;&#x91CF;</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x89E3;&#x6CD5; 1 - &#x4F7F;&#x7528;&#x4E34;&#x65F6;&#x53D8;&#x91CF;</span>
+c = b
+b = a
+a = c
+</code></pre>
+<h4 id="&#x89E3;&#x6CD5;-2-&#x2014;&#x2014;-&#x4E0D;&#x4F7F;&#x7528;&#x4E34;&#x65F6;&#x53D8;&#x91CF;">&#x89E3;&#x6CD5; 2 &#x2014;&#x2014; &#x4E0D;&#x4F7F;&#x7528;&#x4E34;&#x65F6;&#x53D8;&#x91CF;</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x89E3;&#x6CD5; 2 - &#x4E0D;&#x4F7F;&#x7528;&#x4E34;&#x65F6;&#x53D8;&#x91CF;</span>
+a = a + b
+b = a - b
+a = a - b
+</code></pre>
+<h4 id="&#x89E3;&#x6CD5;-3-&#x2014;&#x2014;-python-&#x4E13;&#x6709;&#xFF0C;&#x5229;&#x7528;&#x5143;&#x7EC4;">&#x89E3;&#x6CD5; 3 &#x2014;&#x2014; Python &#x4E13;&#x6709;&#xFF0C;&#x5229;&#x7528;&#x5143;&#x7EC4;</h4>
+<pre><code class="lang-python">a, b = b, a
+</code></pre>
+<h2 id="03-&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;-&#x8FDB;&#x9636;">03. &#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570; &#x8FDB;&#x9636;</h2>
+<h3 id="31-&#x4E0D;&#x53EF;&#x53D8;&#x548C;&#x53EF;&#x53D8;&#x7684;&#x53C2;&#x6570;">3.1. &#x4E0D;&#x53EF;&#x53D8;&#x548C;&#x53EF;&#x53D8;&#x7684;&#x53C2;&#x6570;</h3>
+<blockquote>
+<p>&#x95EE;&#x9898; 1&#xFF1A;&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#xFF0C;&#x9488;&#x5BF9;&#x53C2;&#x6570;&#x4F7F;&#x7528; <strong>&#x8D4B;&#x503C;&#x8BED;&#x53E5;</strong>&#xFF0C;&#x4F1A;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x65F6;&#x4F20;&#x9012;&#x7684; <strong>&#x5B9E;&#x53C2;&#x53D8;&#x91CF;</strong>&#xFF1F; &#x2014;&#x2014; &#x4E0D;&#x4F1A;&#xFF01;</p>
+</blockquote>
+<ul>
+<li>&#x65E0;&#x8BBA;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x662F; <strong>&#x53EF;&#x53D8;</strong> &#x8FD8;&#x662F; <strong>&#x4E0D;&#x53EF;&#x53D8;</strong> <ul>
+<li>&#x53EA;&#x8981; <strong>&#x9488;&#x5BF9;&#x53C2;&#x6570;</strong> &#x4F7F;&#x7528; <strong>&#x8D4B;&#x503C;&#x8BED;&#x53E5;</strong>&#xFF0C;&#x4F1A;&#x5728; <strong>&#x51FD;&#x6570;&#x5185;&#x90E8;</strong> &#x4FEE;&#x6539; <strong>&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x7684;&#x5F15;&#x7528;</strong>&#xFF0C;<strong>&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5230; &#x5916;&#x90E8;&#x53D8;&#x91CF;&#x7684;&#x5F15;&#x7528;</strong></li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">demo</span><span class="hljs-params">(num, num_list)</span>:</span>
+
+    print(<span class="hljs-string">&quot;&#x51FD;&#x6570;&#x5185;&#x90E8;&quot;</span>)
+
+    <span class="hljs-comment"># &#x8D4B;&#x503C;&#x8BED;&#x53E5;</span>
+    num = <span class="hljs-number">200</span>
+    num_list = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+
+    print(num)
+    print(num_list)
+
+    print(<span class="hljs-string">&quot;&#x51FD;&#x6570;&#x4EE3;&#x7801;&#x5B8C;&#x6210;&quot;</span>)
+
+
+gl_num = <span class="hljs-number">99</span>
+gl_list = [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]
+demo(gl_num, gl_list)
+print(gl_num)
+print(gl_list)
+</code></pre>
+<blockquote>
+<p>&#x95EE;&#x9898; 2&#xFF1A;&#x5982;&#x679C;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x662F; <strong>&#x53EF;&#x53D8;&#x7C7B;&#x578B;</strong>&#xFF0C;&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#xFF0C;&#x4F7F;&#x7528; <strong>&#x65B9;&#x6CD5;</strong> &#x4FEE;&#x6539;&#x4E86;&#x6570;&#x636E;&#x7684;&#x5185;&#x5BB9;&#xFF0C;<strong>&#x540C;&#x6837;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x5916;&#x90E8;&#x7684;&#x6570;&#x636E;</strong></p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mutable</span><span class="hljs-params">(num_list)</span>:</span>
+
+    <span class="hljs-comment"># num_list = [1, 2, 3]</span>
+    num_list.extend([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])
+
+    print(num_list)
+
+gl_list = [<span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>]
+mutable(gl_list)
+print(gl_list)
+</code></pre>
+<h4 id="&#x9762;&#x8BD5;&#x9898;-&#x2014;&#x2014;-">&#x9762;&#x8BD5;&#x9898; &#x2014;&#x2014; <code>+=</code></h4>
+<ul>
+<li>&#x5728; <code>python</code> &#x4E2D;&#xFF0C;&#x5217;&#x8868;&#x53D8;&#x91CF;&#x8C03;&#x7528; <code>+=</code> &#x672C;&#x8D28;&#x4E0A;&#x662F;&#x5728;&#x6267;&#x884C;&#x5217;&#x8868;&#x53D8;&#x91CF;&#x7684; <code>extend</code> &#x65B9;&#x6CD5;&#xFF0C;&#x4E0D;&#x4F1A;&#x4FEE;&#x6539;&#x53D8;&#x91CF;&#x7684;&#x5F15;&#x7528;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">demo</span><span class="hljs-params">(num, num_list)</span>:</span>
+
+    print(<span class="hljs-string">&quot;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x4EE3;&#x7801;&quot;</span>)
+
+    <span class="hljs-comment"># num = num + num</span>
+    num += num
+    <span class="hljs-comment"># num_list.extend(num_list) &#x7531;&#x4E8E;&#x662F;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x4F1A;&#x4FEE;&#x6539;&#x53D8;&#x91CF;&#x7684;&#x5F15;&#x7528;</span>
+    <span class="hljs-comment"># &#x51FD;&#x6570;&#x6267;&#x884C;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x5916;&#x90E8;&#x6570;&#x636E;&#x540C;&#x6837;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x5316;</span>
+    num_list += num_list
+
+    print(num)
+    print(num_list)
+    print(<span class="hljs-string">&quot;&#x51FD;&#x6570;&#x4EE3;&#x7801;&#x5B8C;&#x6210;&quot;</span>)
+
+
+gl_num = <span class="hljs-number">9</span>
+gl_list = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+demo(gl_num, gl_list)
+print(gl_num)
+print(gl_list)
+</code></pre>
+<h3 id="32-&#x7F3A;&#x7701;&#x53C2;&#x6570;">3.2 &#x7F3A;&#x7701;&#x53C2;&#x6570;</h3>
+<ul>
+<li>&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x7ED9; <strong>&#x67D0;&#x4E2A;&#x53C2;&#x6570;</strong> &#x6307;&#x5B9A;&#x4E00;&#x4E2A;<strong>&#x9ED8;&#x8BA4;&#x503C;</strong>&#xFF0C;&#x5177;&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#x7684;&#x53C2;&#x6570;&#x5C31;&#x53EB;&#x505A; <strong>&#x7F3A;&#x7701;&#x53C2;&#x6570;</strong></li>
+<li>&#x8C03;&#x7528;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4F20;&#x5165; <strong>&#x7F3A;&#x7701;&#x53C2;&#x6570;</strong> &#x7684;&#x503C;&#xFF0C;&#x5219;&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x65F6;&#x6307;&#x5B9A;&#x7684; <strong>&#x53C2;&#x6570;&#x9ED8;&#x8BA4;&#x503C;</strong></li>
+<li>&#x51FD;&#x6570;&#x7684;&#x7F3A;&#x7701;&#x53C2;&#x6570;&#xFF0C;<strong>&#x5C06;&#x5E38;&#x89C1;&#x7684;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;&#x53C2;&#x6570;&#x7684;&#x7F3A;&#x7701;&#x503C;</strong>&#xFF0C;&#x4ECE;&#x800C; <strong>&#x7B80;&#x5316;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;</strong></li>
+<li>&#x4F8B;&#x5982;&#xFF1A;&#x5BF9;&#x5217;&#x8868;&#x6392;&#x5E8F;&#x7684;&#x65B9;&#x6CD5;</li>
+</ul>
+<pre><code class="lang-python">gl_num_list = [<span class="hljs-number">6</span>, <span class="hljs-number">3</span>, <span class="hljs-number">9</span>]
+
+<span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x5C31;&#x662F;&#x5347;&#x5E8F;&#x6392;&#x5E8F;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x79CD;&#x5E94;&#x7528;&#x9700;&#x6C42;&#x66F4;&#x591A;</span>
+gl_num_list.sort()
+print(gl_num_list)
+
+<span class="hljs-comment"># &#x53EA;&#x6709;&#x5F53;&#x9700;&#x8981;&#x964D;&#x5E8F;&#x6392;&#x5E8F;&#x65F6;&#xFF0C;&#x624D;&#x9700;&#x8981;&#x4F20;&#x9012; `reverse` &#x53C2;&#x6570;</span>
+gl_num_list.sort(reverse=<span class="hljs-keyword">True</span>)
+print(gl_num_list)
+</code></pre>
+<h4 id="&#x6307;&#x5B9A;&#x51FD;&#x6570;&#x7684;&#x7F3A;&#x7701;&#x53C2;&#x6570;">&#x6307;&#x5B9A;&#x51FD;&#x6570;&#x7684;&#x7F3A;&#x7701;&#x53C2;&#x6570;</h4>
+<ul>
+<li>&#x5728;&#x53C2;&#x6570;&#x540E;&#x4F7F;&#x7528;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x53C2;&#x6570;&#x7684;&#x7F3A;&#x7701;&#x503C;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(name, gender=True)</span>:</span>
+
+    gender_text = <span class="hljs-string">&quot;&#x7537;&#x751F;&quot;</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> gender:
+        gender_text = <span class="hljs-string">&quot;&#x5973;&#x751F;&quot;</span>
+
+    print(<span class="hljs-string">&quot;%s &#x662F; %s&quot;</span> % (name, gender_text))
+</code></pre>
+<p><strong>&#x63D0;&#x793A;</strong></p>
+<ol>
+<li>&#x7F3A;&#x7701;&#x53C2;&#x6570;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528; <strong>&#x6700;&#x5E38;&#x89C1;&#x7684;&#x503C;</strong> &#x4F5C;&#x4E3A;&#x9ED8;&#x8BA4;&#x503C;&#xFF01;</li>
+<li>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x503C; <strong>&#x4E0D;&#x80FD;&#x786E;&#x5B9A;</strong>&#xFF0C;&#x5219;&#x4E0D;&#x5E94;&#x8BE5;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x6570;&#x503C;&#x5728;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x7531;&#x5916;&#x754C;&#x4F20;&#x9012;&#xFF01;</li>
+</ol>
+<h4 id="&#x7F3A;&#x7701;&#x53C2;&#x6570;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x7F3A;&#x7701;&#x53C2;&#x6570;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h4>
+<h5 id="1-&#x7F3A;&#x7701;&#x53C2;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x4F4D;&#x7F6E;">1) &#x7F3A;&#x7701;&#x53C2;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x4F4D;&#x7F6E;</h5>
+<ul>
+<li><strong>&#x5FC5;&#x987B;&#x4FDD;&#x8BC1;</strong> <strong>&#x5E26;&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#x7684;&#x7F3A;&#x7701;&#x53C2;&#x6570;</strong> <strong>&#x5728;&#x53C2;&#x6570;&#x5217;&#x8868;&#x672B;&#x5C3E;</strong></li>
+<li>&#x6240;&#x4EE5;&#xFF0C;&#x4EE5;&#x4E0B;&#x5B9A;&#x4E49;&#x662F;&#x9519;&#x8BEF;&#x7684;&#xFF01;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(name, gender=True, title)</span>:</span>
+</code></pre>
+<h5 id="2-&#x8C03;&#x7528;&#x5E26;&#x6709;&#x591A;&#x4E2A;&#x7F3A;&#x7701;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;">2) &#x8C03;&#x7528;&#x5E26;&#x6709;&#x591A;&#x4E2A;&#x7F3A;&#x7701;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;</h5>
+<ul>
+<li>&#x5728; <strong>&#x8C03;&#x7528;&#x51FD;&#x6570;&#x65F6;</strong>&#xFF0C;&#x5982;&#x679C;&#x6709; <strong>&#x591A;&#x4E2A;&#x7F3A;&#x7701;&#x53C2;&#x6570;</strong>&#xFF0C;<strong>&#x9700;&#x8981;&#x6307;&#x5B9A;&#x53C2;&#x6570;&#x540D;</strong>&#xFF0C;&#x8FD9;&#x6837;&#x89E3;&#x91CA;&#x5668;&#x624D;&#x80FD;&#x591F;&#x77E5;&#x9053;&#x53C2;&#x6570;&#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#xFF01;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(name, title=<span class="hljs-string">&quot;&quot;</span>, gender=True)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;
+
+    :param title: &#x804C;&#x4F4D;
+    :param name: &#x73ED;&#x4E0A;&#x540C;&#x5B66;&#x7684;&#x59D3;&#x540D;
+    :param gender: True &#x7537;&#x751F; False &#x5973;&#x751F;
+    &quot;&quot;&quot;</span>
+
+    gender_text = <span class="hljs-string">&quot;&#x7537;&#x751F;&quot;</span>
+
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> gender:
+        gender_text = <span class="hljs-string">&quot;&#x5973;&#x751F;&quot;</span>
+
+    print(<span class="hljs-string">&quot;%s%s &#x662F; %s&quot;</span> % (title, name, gender_text))
+
+
+<span class="hljs-comment"># &#x63D0;&#x793A;&#xFF1A;&#x5728;&#x6307;&#x5B9A;&#x7F3A;&#x7701;&#x53C2;&#x6570;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x65F6;&#xFF0C;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x503C;&#x4F5C;&#x4E3A;&#x9ED8;&#x8BA4;&#x503C;&#xFF01;</span>
+print_info(<span class="hljs-string">&quot;&#x5C0F;&#x660E;&quot;</span>)
+print_info(<span class="hljs-string">&quot;&#x8001;&#x738B;&quot;</span>, title=<span class="hljs-string">&quot;&#x73ED;&#x957F;&quot;</span>)
+print_info(<span class="hljs-string">&quot;&#x5C0F;&#x7F8E;&quot;</span>, gender=<span class="hljs-keyword">False</span>)
+</code></pre>
+<h3 id="33-&#x591A;&#x503C;&#x53C2;&#x6570;&#xFF08;&#x77E5;&#x9053;&#xFF09;">3.3 &#x591A;&#x503C;&#x53C2;&#x6570;&#xFF08;&#x77E5;&#x9053;&#xFF09;</h3>
+<h4 id="&#x5B9A;&#x4E49;&#x652F;&#x6301;&#x591A;&#x503C;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;">&#x5B9A;&#x4E49;&#x652F;&#x6301;&#x591A;&#x503C;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;</h4>
+<ul>
+<li>&#x6709;&#x65F6;&#x53EF;&#x80FD;&#x9700;&#x8981; <strong>&#x4E00;&#x4E2A;&#x51FD;&#x6570;</strong> &#x80FD;&#x591F;&#x5904;&#x7406;&#x7684;&#x53C2;&#x6570; <strong>&#x4E2A;&#x6570;</strong> &#x662F;&#x4E0D;&#x786E;&#x5B9A;&#x7684;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <strong>&#x591A;&#x503C;&#x53C2;&#x6570;</strong></li>
+<li><code>python</code> &#x4E2D;&#x6709; <strong>&#x4E24;&#x79CD;</strong> &#x591A;&#x503C;&#x53C2;&#x6570;&#xFF1A;<ul>
+<li>&#x53C2;&#x6570;&#x540D;&#x524D;&#x589E;&#x52A0; <strong>&#x4E00;&#x4E2A;</strong> <code>*</code> &#x53EF;&#x4EE5;&#x63A5;&#x6536; <strong>&#x5143;&#x7EC4;</strong></li>
+<li>&#x53C2;&#x6570;&#x540D;&#x524D;&#x589E;&#x52A0; <strong>&#x4E24;&#x4E2A;</strong> <code>*</code> &#x53EF;&#x4EE5;&#x63A5;&#x6536; <strong>&#x5B57;&#x5178;</strong></li>
+</ul>
+</li>
+<li><p>&#x4E00;&#x822C;&#x5728;&#x7ED9;&#x591A;&#x503C;&#x53C2;&#x6570;&#x547D;&#x540D;&#x65F6;&#xFF0C;<strong>&#x4E60;&#x60EF;</strong>&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x4E24;&#x4E2A;&#x540D;&#x5B57;</p>
+<ul>
+<li><code>*args</code> &#x2014;&#x2014; &#x5B58;&#x653E; <strong>&#x5143;&#x7EC4;</strong> &#x53C2;&#x6570;&#xFF0C;&#x524D;&#x9762;&#x6709;&#x4E00;&#x4E2A; <code>*</code></li>
+<li><code>**kwargs</code> &#x2014;&#x2014; &#x5B58;&#x653E; <strong>&#x5B57;&#x5178;</strong> &#x53C2;&#x6570;&#xFF0C;&#x524D;&#x9762;&#x6709;&#x4E24;&#x4E2A; <code>*</code></li>
+</ul>
+</li>
+<li><p><code>args</code> &#x662F; <code>arguments</code> &#x7684;&#x7F29;&#x5199;&#xFF0C;&#x6709;&#x53D8;&#x91CF;&#x7684;&#x542B;&#x4E49;</p>
+</li>
+<li><code>kw</code> &#x662F; <code>keyword</code> &#x7684;&#x7F29;&#x5199;&#xFF0C;<code>kwargs</code> &#x53EF;&#x4EE5;&#x8BB0;&#x5FC6; <strong>&#x952E;&#x503C;&#x5BF9;&#x53C2;&#x6570;</strong></li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">demo</span><span class="hljs-params">(num, *args, **kwargs)</span>:</span>
+
+    print(num)
+    print(args)
+    print(kwargs)
+
+
+demo(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, name=<span class="hljs-string">&quot;&#x5C0F;&#x660E;&quot;</span>, age=<span class="hljs-number">18</span>, gender=<span class="hljs-keyword">True</span>)
+</code></pre>
+<blockquote>
+<p>&#x63D0;&#x793A;&#xFF1A;<strong>&#x591A;&#x503C;&#x53C2;&#x6570;</strong> &#x7684;&#x5E94;&#x7528;&#x4F1A;&#x7ECF;&#x5E38;&#x51FA;&#x73B0;&#x5728;&#x7F51;&#x7EDC;&#x4E0A;&#x4E00;&#x4E9B;&#x5927;&#x725B;&#x5F00;&#x53D1;&#x7684;&#x6846;&#x67B6;&#x4E2D;&#xFF0C;&#x77E5;&#x9053;&#x591A;&#x503C;&#x53C2;&#x6570;&#xFF0C;<strong>&#x6709;&#x5229;&#x4E8E;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x8BFB;&#x61C2;&#x5927;&#x725B;&#x7684;&#x4EE3;&#x7801;</strong></p>
+</blockquote>
+<h4 id="&#x591A;&#x503C;&#x53C2;&#x6570;&#x6848;&#x4F8B;-&#x2014;&#x2014;-&#x8BA1;&#x7B97;&#x4EFB;&#x610F;&#x591A;&#x4E2A;&#x6570;&#x5B57;&#x7684;&#x548C;">&#x591A;&#x503C;&#x53C2;&#x6570;&#x6848;&#x4F8B; &#x2014;&#x2014; &#x8BA1;&#x7B97;&#x4EFB;&#x610F;&#x591A;&#x4E2A;&#x6570;&#x5B57;&#x7684;&#x548C;</h4>
+<p><strong>&#x9700;&#x6C42;</strong></p>
+<ol>
+<li>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570; <code>sum_numbers</code>&#xFF0C;&#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x7684; <strong>&#x4EFB;&#x610F;&#x591A;&#x4E2A;&#x6574;&#x6570;</strong></li>
+<li>&#x529F;&#x80FD;&#x8981;&#x6C42;&#xFF1A;&#x5C06;&#x4F20;&#x9012;&#x7684; <strong>&#x6240;&#x6709;&#x6570;&#x5B57;&#x7D2F;&#x52A0;</strong> &#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x7D2F;&#x52A0;&#x7ED3;&#x679C;</li>
+</ol>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sum_numbers</span><span class="hljs-params">(*args)</span>:</span>
+
+    num = <span class="hljs-number">0</span>
+    <span class="hljs-comment"># &#x904D;&#x5386; args &#x5143;&#x7EC4;&#x987A;&#x5E8F;&#x6C42;&#x548C;</span>
+    <span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> args:
+        num += n
+
+    <span class="hljs-keyword">return</span> num
+
+print(sum_numbers(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>))
+</code></pre>
+<h4 id="&#x5143;&#x7EC4;&#x548C;&#x5B57;&#x5178;&#x7684;&#x62C6;&#x5305;&#xFF08;&#x77E5;&#x9053;&#xFF09;">&#x5143;&#x7EC4;&#x548C;&#x5B57;&#x5178;&#x7684;&#x62C6;&#x5305;&#xFF08;&#x77E5;&#x9053;&#xFF09;</h4>
+<ul>
+<li>&#x5728;&#x8C03;&#x7528;&#x5E26;&#x6709;&#x591A;&#x503C;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x5E0C;&#x671B;&#xFF1A;<ul>
+<li>&#x5C06;&#x4E00;&#x4E2A; <strong>&#x5143;&#x7EC4;&#x53D8;&#x91CF;</strong>&#xFF0C;&#x76F4;&#x63A5;&#x4F20;&#x9012;&#x7ED9; <code>args</code></li>
+<li>&#x5C06;&#x4E00;&#x4E2A; <strong>&#x5B57;&#x5178;&#x53D8;&#x91CF;</strong>&#xFF0C;&#x76F4;&#x63A5;&#x4F20;&#x9012;&#x7ED9; <code>kwargs</code></li>
+</ul>
+</li>
+<li>&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <strong>&#x62C6;&#x5305;</strong>&#xFF0C;&#x7B80;&#x5316;&#x53C2;&#x6570;&#x7684;&#x4F20;&#x9012;&#xFF0C;<strong>&#x62C6;&#x5305;</strong> &#x7684;&#x65B9;&#x5F0F;&#x662F;&#xFF1A;<ul>
+<li>&#x5728; <strong>&#x5143;&#x7EC4;&#x53D8;&#x91CF;&#x524D;</strong>&#xFF0C;&#x589E;&#x52A0; <strong>&#x4E00;&#x4E2A;</strong> <code>*</code></li>
+<li>&#x5728; <strong>&#x5B57;&#x5178;&#x53D8;&#x91CF;&#x524D;</strong>&#xFF0C;&#x589E;&#x52A0; <strong>&#x4E24;&#x4E2A;</strong> <code>*</code></li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">demo</span><span class="hljs-params">(*args, **kwargs)</span>:</span>
+
+    print(args)
+    print(kwargs)
+
+
+<span class="hljs-comment"># &#x9700;&#x8981;&#x5C06;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;&#x53D8;&#x91CF;/&#x5B57;&#x5178;&#x53D8;&#x91CF;&#x4F20;&#x9012;&#x7ED9;&#x51FD;&#x6570;&#x5BF9;&#x5E94;&#x7684;&#x53C2;&#x6570;</span>
+gl_nums = (<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+gl_xiaoming = {<span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x5C0F;&#x660E;&quot;</span>, <span class="hljs-string">&quot;age&quot;</span>: <span class="hljs-number">18</span>}
+
+<span class="hljs-comment"># &#x4F1A;&#x628A; num_tuple &#x548C; xiaoming &#x4F5C;&#x4E3A;&#x5143;&#x7EC4;&#x4F20;&#x9012;&#x4E2A; args</span>
+<span class="hljs-comment"># demo(gl_nums, gl_xiaoming)</span>
+demo(*gl_nums, **gl_xiaoming)
+</code></pre>
+<h2 id="04-&#x51FD;&#x6570;&#x7684;&#x9012;&#x5F52;">04. &#x51FD;&#x6570;&#x7684;&#x9012;&#x5F52;</h2>
+<blockquote>
+<p>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x81EA;&#x8EAB;&#x7684; <strong>&#x7F16;&#x7A0B;&#x6280;&#x5DE7;</strong> &#x79F0;&#x4E3A;&#x9012;&#x5F52;</p>
+</blockquote>
+<h3 id="41-&#x9012;&#x5F52;&#x51FD;&#x6570;&#x7684;&#x7279;&#x70B9;">4.1 &#x9012;&#x5F52;&#x51FD;&#x6570;&#x7684;&#x7279;&#x70B9;</h3>
+<p><strong>&#x7279;&#x70B9;</strong></p>
+<ul>
+<li><strong>&#x4E00;&#x4E2A;&#x51FD;&#x6570;</strong> <strong>&#x5185;&#x90E8;</strong> <strong>&#x8C03;&#x7528;&#x81EA;&#x5DF1;</strong><ul>
+<li>&#x51FD;&#x6570;&#x5185;&#x90E8;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x7136;&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x4E5F;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x81EA;&#x5DF1;</li>
+</ul>
+</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x7279;&#x70B9;</strong></p>
+<ol>
+<li>&#x51FD;&#x6570;&#x5185;&#x90E8;&#x7684; <strong>&#x4EE3;&#x7801;</strong> &#x662F;&#x76F8;&#x540C;&#x7684;&#xFF0C;&#x53EA;&#x662F;&#x9488;&#x5BF9; <strong>&#x53C2;&#x6570;</strong> &#x4E0D;&#x540C;&#xFF0C;<strong>&#x5904;&#x7406;&#x7684;&#x7ED3;&#x679C;&#x4E0D;&#x540C;</strong></li>
+<li>&#x5F53; <strong>&#x53C2;&#x6570;&#x6EE1;&#x8DB3;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;</strong> &#x65F6;&#xFF0C;&#x51FD;&#x6570;&#x4E0D;&#x518D;&#x6267;&#x884C;<ul>
+<li><strong>&#x8FD9;&#x4E2A;&#x975E;&#x5E38;&#x91CD;&#x8981;</strong>&#xFF0C;&#x901A;&#x5E38;&#x88AB;&#x79F0;&#x4E3A;&#x9012;&#x5F52;&#x7684;&#x51FA;&#x53E3;&#xFF0C;&#x5426;&#x5219; <strong>&#x4F1A;&#x51FA;&#x73B0;&#x6B7B;&#x5FAA;&#x73AF;</strong>&#xFF01;</li>
+</ul>
+</li>
+</ol>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sum_numbers</span><span class="hljs-params">(num)</span>:</span>
+
+    print(num)
+
+    <span class="hljs-comment"># &#x9012;&#x5F52;&#x7684;&#x51FA;&#x53E3;&#x5F88;&#x91CD;&#x8981;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x51FA;&#x73B0;&#x6B7B;&#x5FAA;&#x73AF;</span>
+    <span class="hljs-keyword">if</span> num == <span class="hljs-number">1</span>:
+        <span class="hljs-keyword">return</span>
+
+    sum_numbers(num - <span class="hljs-number">1</span>)
+
+sum_numbers(<span class="hljs-number">3</span>)
+</code></pre>
+<p><img src="media/14993074876434/002_%E9%80%92%E5%BD%92%E8%B0%83%E7%94%A8%E7%A4%BA%E6%84%8F%E5%9B%BEI.png" alt="002_&#x9012;&#x5F52;&#x8C03;&#x7528;&#x793A;&#x610F;&#x56FE;I"></p>
+<h3 id="42-&#x9012;&#x5F52;&#x6848;&#x4F8B;-&#x2014;&#x2014;-&#x8BA1;&#x7B97;&#x6570;&#x5B57;&#x7D2F;&#x52A0;">4.2 &#x9012;&#x5F52;&#x6848;&#x4F8B; &#x2014;&#x2014; &#x8BA1;&#x7B97;&#x6570;&#x5B57;&#x7D2F;&#x52A0;</h3>
+<p><strong>&#x9700;&#x6C42;</strong></p>
+<ol>
+<li>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570; <code>sum_numbers</code></li>
+<li>&#x80FD;&#x591F;&#x63A5;&#x6536;&#x4E00;&#x4E2A; <code>num</code> &#x7684;&#x6574;&#x6570;&#x53C2;&#x6570;</li>
+<li>&#x8BA1;&#x7B97; 1 + 2 + ... num &#x7684;&#x7ED3;&#x679C;</li>
+</ol>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sum_numbers</span><span class="hljs-params">(num)</span>:</span>
+
+    <span class="hljs-keyword">if</span> num == <span class="hljs-number">1</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
+
+    <span class="hljs-comment"># &#x5047;&#x8BBE; sum_numbers &#x80FD;&#x591F;&#x5B8C;&#x6210; num - 1 &#x7684;&#x7D2F;&#x52A0;</span>
+    temp = sum_numbers(num - <span class="hljs-number">1</span>)
+
+    <span class="hljs-comment"># &#x51FD;&#x6570;&#x5185;&#x90E8;&#x7684;&#x6838;&#x5FC3;&#x7B97;&#x6CD5;&#x5C31;&#x662F; &#x4E24;&#x4E2A;&#x6570;&#x5B57;&#x7684;&#x76F8;&#x52A0;</span>
+    <span class="hljs-keyword">return</span> num + temp
+
+print(sum_numbers(<span class="hljs-number">2</span>))
+</code></pre>
+<p><img src="media/14993074876434/002_%E9%80%92%E5%BD%92%E8%B0%83%E7%94%A8%E7%A4%BA%E6%84%8F%E5%9B%BE.png" alt="002_&#x9012;&#x5F52;&#x8C03;&#x7528;&#x793A;&#x610F;&#x56FE;"></p>
+<blockquote>
+<p>&#x63D0;&#x793A;&#xFF1A;&#x9012;&#x5F52;&#x662F;&#x4E00;&#x4E2A; <strong>&#x7F16;&#x7A0B;&#x6280;&#x5DE7;</strong>&#xFF0C;&#x521D;&#x6B21;&#x63A5;&#x89E6;&#x9012;&#x5F52;&#x4F1A;&#x611F;&#x89C9;&#x6709;&#x4E9B;&#x5403;&#x529B;&#xFF01;&#x5728;&#x5904;&#x7406; <strong>&#x4E0D;&#x786E;&#x5B9A;&#x7684;&#x5FAA;&#x73AF;&#x6761;&#x4EF6;&#x65F6;</strong>&#xFF0C;&#x683C;&#x5916;&#x7684;&#x6709;&#x7528;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<strong>&#x904D;&#x5386;&#x6574;&#x4E2A;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7684;&#x7ED3;&#x6784;</strong></p>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../02_python1/16_变量进阶（理解）.html" class="navigation navigation-prev " aria-label="Previous page: 变量进阶（理解）"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../03_python2/02_类和对象.html" class="navigation navigation-next " aria-label="Next page: 类和对象"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
