@@ -1,0 +1,1107 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>游戏背景 | JWD的python自学教程</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../04_Project/05_敌机出场.html" />
+    
+    
+    <link rel="prev" href="../04_Project/03_游戏框架搭建.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.4"
+        data-chapter-title="游戏背景"
+        data-filepath="04_Project/04_游戏背景.md"
+        data-basepath=".."
+        data-revision="Thu May 02 2019 14:25:59 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        前言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> Linux基础</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_Linux/01_操作系统（科普章节）.html">
+            
+                
+                    <a href="../01_Linux/01_操作系统（科普章节）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        操作系统（科普章节）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_Linux/02_操作系统的发展史（科普章节）.html">
+            
+                
+                    <a href="../01_Linux/02_操作系统的发展史（科普章节）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        操作系统的发展史（科普章节）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_Linux/03_文件和目录（理解）.html">
+            
+                
+                    <a href="../01_Linux/03_文件和目录（理解）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        文件和目录（理解）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01_Linux/04_Ubuntu 图形界面入门.html">
+            
+                
+                    <a href="../01_Linux/04_Ubuntu 图形界面入门.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Ubuntu 图形界面入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="01_Linux/05_常用 Linux 命令的基本使用.html">
+            
+                
+                    <a href="../01_Linux/05_常用 Linux 命令的基本使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        常用 Linux 命令的基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="01_Linux/06_Linux 终端命令格式.html">
+            
+                
+                    <a href="../01_Linux/06_Linux 终端命令格式.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        Linux 终端命令格式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="01_Linux/07_文件和目录常用命令.html">
+            
+                
+                    <a href="../01_Linux/07_文件和目录常用命令.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        文件和目录常用命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="01_Linux/08_远程管理常用命令.html">
+            
+                
+                    <a href="../01_Linux/08_远程管理常用命令.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        远程管理常用命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="01_Linux/09_用户权限常用命令.html">
+            
+                
+                    <a href="../01_Linux/09_用户权限常用命令.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        用户权限常用命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="01_Linux/10_系统信息相关命令.html">
+            
+                
+                    <a href="../01_Linux/10_系统信息相关命令.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        系统信息相关命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="01_Linux/11_其他命令.html">
+            
+                
+                    <a href="../01_Linux/11_其他命令.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                        其他命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="01_Linux/12_vi_终端中的编辑器.html">
+            
+                
+                    <a href="../01_Linux/12_vi_终端中的编辑器.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                        vi—终端中的编辑器
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> Python基础</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_python1/01_认识 Python.html">
+            
+                
+                    <a href="../02_python1/01_认识 Python.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        认识 Python
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_python1/02_第一个 Python 程序.html">
+            
+                
+                    <a href="../02_python1/02_第一个 Python 程序.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        第一个 Python 程序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_python1/03_PyCharm 的初始设置（知道）.html">
+            
+                
+                    <a href="../02_python1/03_PyCharm 的初始设置（知道）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        PyCharm 的初始设置（知道）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_python1/04_多文件项目的演练.html">
+            
+                
+                    <a href="../02_python1/04_多文件项目的演练.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        多文件项目的演练
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02_python1/05_注释.html">
+            
+                
+                    <a href="../02_python1/05_注释.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        注释
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="02_python1/06_算数运算符.html">
+            
+                
+                    <a href="../02_python1/06_算数运算符.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        算数运算符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="02_python1/07_程序执行原理（科普）.html">
+            
+                
+                    <a href="../02_python1/07_程序执行原理（科普）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        程序执行原理（科普）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="02_python1/08_变量的基本使用.html">
+            
+                
+                    <a href="../02_python1/08_变量的基本使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        变量的基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="02_python1/09_变量的命名.html">
+            
+                
+                    <a href="../02_python1/09_变量的命名.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        变量的命名
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="02_python1/10_判断（if）语句.html">
+            
+                
+                    <a href="../02_python1/10_判断（if）语句.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        判断（if）语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="02_python1/11_运算符.html">
+            
+                
+                    <a href="../02_python1/11_运算符.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        运算符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="02_python1/12_循环.html">
+            
+                
+                    <a href="../02_python1/12_循环.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        循环
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="02_python1/13_函数基础.html">
+            
+                
+                    <a href="../02_python1/13_函数基础.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        函数基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="02_python1/14_高级变量类型.html">
+            
+                
+                    <a href="../02_python1/14_高级变量类型.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.14.</b>
+                        
+                        高级变量类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="02_python1/15_综合应用 —— 名片管理系统.html">
+            
+                
+                    <a href="../02_python1/15_综合应用 —— 名片管理系统.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.15.</b>
+                        
+                        综合应用 —— 名片管理系统
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="02_python1/16_变量进阶（理解）.html">
+            
+                
+                    <a href="../02_python1/16_变量进阶（理解）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.16.</b>
+                        
+                        变量进阶（理解）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="02_python1/17_函数进阶.html">
+            
+                
+                    <a href="../02_python1/17_函数进阶.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.17.</b>
+                        
+                        函数进阶
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 面向对象</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_python2/01_面向对象(OOP.html">
+            
+            <span><b>3.1.</b> 面向对象(OOP)基本概念</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_python2/02_类和对象.html">
+            
+                
+                    <a href="../03_python2/02_类和对象.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        类和对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03_python2/03_面相对象基础语法.html">
+            
+                
+                    <a href="../03_python2/03_面相对象基础语法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        面相对象基础语法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03_python2/04_面向对象封装案例.html">
+            
+                
+                    <a href="../03_python2/04_面向对象封装案例.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        面向对象封装案例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="03_python2/05_面向对象封装案例 II.html">
+            
+                
+                    <a href="../03_python2/05_面向对象封装案例 II.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        面向对象封装案例 II
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="03_python2/06_私有属性和私有方法.html">
+            
+                
+                    <a href="../03_python2/06_私有属性和私有方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        私有属性和私有方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="03_python2/07_继承.html">
+            
+                
+                    <a href="../03_python2/07_继承.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        继承
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="03_python2/08_多态.html">
+            
+                
+                    <a href="../03_python2/08_多态.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        多态
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="03_python2/09_类属性和类方法.html">
+            
+                
+                    <a href="../03_python2/09_类属性和类方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        类属性和类方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="03_python2/10_单例.html">
+            
+                
+                    <a href="../03_python2/10_单例.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        单例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="03_python2/11_异常.html">
+            
+                
+                    <a href="../03_python2/11_异常.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.11.</b>
+                        
+                        异常
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="03_python2/12_模块和包.html">
+            
+                
+                    <a href="../03_python2/12_模块和包.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.12.</b>
+                        
+                        模块和包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="03_python2/13_文件.html">
+            
+                
+                    <a href="../03_python2/13_文件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.13.</b>
+                        
+                        文件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="03_python2/14_eval函数.html">
+            
+                
+                    <a href="../03_python2/14_eval函数.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.14.</b>
+                        
+                        eval函数
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 项目实战</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_Project/01_项目实战 —— 飞机大战.html">
+            
+                
+                    <a href="../04_Project/01_项目实战 —— 飞机大战.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        项目实战 —— 飞机大战
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_Project/02_pygame 快速入门.html">
+            
+                
+                    <a href="../04_Project/02_pygame 快速入门.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        pygame 快速入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_Project/03_游戏框架搭建.html">
+            
+                
+                    <a href="../04_Project/03_游戏框架搭建.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        游戏框架搭建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.4" data-path="04_Project/04_游戏背景.html">
+            
+                
+                    <a href="../04_Project/04_游戏背景.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        游戏背景
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_Project/05_敌机出场.html">
+            
+                
+                    <a href="../04_Project/05_敌机出场.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        敌机出场
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="04_Project/06_英雄登场.html">
+            
+                
+                    <a href="../04_Project/06_英雄登场.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        英雄登场
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="04_Project/07_碰撞检测.html">
+            
+                
+                    <a href="../04_Project/07_碰撞检测.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        碰撞检测
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >JWD的python自学教程</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x6E38;&#x620F;&#x80CC;&#x666F;">&#x6E38;&#x620F;&#x80CC;&#x666F;</h1>
+<h2 id="&#x76EE;&#x6807;">&#x76EE;&#x6807;</h2>
+<ul>
+<li>&#x80CC;&#x666F;&#x4EA4;&#x66FF;&#x6EDA;&#x52A8;&#x7684;&#x601D;&#x8DEF;&#x786E;&#x5B9A;</li>
+<li>&#x663E;&#x793A;&#x6E38;&#x620F;&#x80CC;&#x666F;</li>
+</ul>
+<h2 id="01-&#x80CC;&#x666F;&#x4EA4;&#x66FF;&#x6EDA;&#x52A8;&#x7684;&#x601D;&#x8DEF;&#x786E;&#x5B9A;">01. &#x80CC;&#x666F;&#x4EA4;&#x66FF;&#x6EDA;&#x52A8;&#x7684;&#x601D;&#x8DEF;&#x786E;&#x5B9A;</h2>
+<p>&#x8FD0;&#x884C; <strong>&#x5907;&#x8BFE;&#x4EE3;&#x7801;</strong>&#xFF0C;<strong>&#x89C2;&#x5BDF;</strong> &#x80CC;&#x666F;&#x56FE;&#x50CF;&#x7684;&#x663E;&#x793A;&#x6548;&#x679C;&#xFF1A;</p>
+<ul>
+<li>&#x6E38;&#x620F;&#x542F;&#x52A8;&#x540E;&#xFF0C;<strong>&#x80CC;&#x666F;&#x56FE;&#x50CF;</strong> &#x4F1A; <strong>&#x8FDE;&#x7EED;&#x4E0D;&#x65AD;&#x5730;</strong> <strong>&#x5411;&#x4E0B;&#x65B9;</strong> &#x79FB;&#x52A8;</li>
+<li>&#x5728; <strong>&#x89C6;&#x89C9;&#x4E0A;</strong> &#x4EA7;&#x751F;&#x82F1;&#x96C4;&#x7684;&#x98DE;&#x673A;&#x4E0D;&#x65AD;&#x5411;&#x4E0A;&#x65B9;&#x98DE;&#x884C;&#x7684; <strong>&#x9519;&#x89C9;</strong> &#x2014;&#x2014; &#x5728;&#x5F88;&#x591A;&#x8DD1;&#x9177;&#x7C7B;&#x6E38;&#x620F;&#x4E2D;&#x5E38;&#x7528;&#x7684;&#x5957;&#x8DEF;<ul>
+<li><strong>&#x6E38;&#x620F;&#x7684;&#x80CC;&#x666F;</strong> &#x4E0D;&#x65AD;&#x53D8;&#x5316;</li>
+<li><strong>&#x6E38;&#x620F;&#x7684;&#x4E3B;&#x89D2;</strong> &#x4F4D;&#x7F6E;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;</li>
+</ul>
+</li>
+</ul>
+<h3 id="11-&#x5B9E;&#x73B0;&#x601D;&#x8DEF;&#x5206;&#x6790;">1.1 &#x5B9E;&#x73B0;&#x601D;&#x8DEF;&#x5206;&#x6790;</h3>
+<p> <img src="media/15025262948537/013_%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BA%A4%E6%9B%BF%E6%BB%9A%E5%8A%A8.png" alt="013_&#x80CC;&#x666F;&#x56FE;&#x7247;&#x4EA4;&#x66FF;&#x6EDA;&#x52A8;-w640"></p>
+<p><strong>&#x89E3;&#x51B3;&#x529E;&#x6CD5;</strong></p>
+<ol>
+<li>&#x521B;&#x5EFA;&#x4E24;&#x5F20;&#x80CC;&#x666F;&#x56FE;&#x50CF;&#x7CBE;&#x7075;<ul>
+<li>&#x7B2C; <code>1</code> &#x5F20; <strong>&#x5B8C;&#x5168;&#x548C;&#x5C4F;&#x5E55;&#x91CD;&#x5408;</strong></li>
+<li>&#x7B2C; <code>2</code> &#x5F20;&#x5728; <strong>&#x5C4F;&#x5E55;&#x7684;&#x6B63;&#x4E0A;&#x65B9;</strong></li>
+</ul>
+</li>
+<li>&#x4E24;&#x5F20;&#x56FE;&#x50CF; <strong>&#x4E00;&#x8D77;&#x5411;&#x4E0B;&#x65B9;&#x8FD0;&#x52A8;</strong><ul>
+<li><code>self.rect.y += self.speed</code></li>
+</ul>
+</li>
+<li>&#x5F53; <strong>&#x4EFB;&#x610F;&#x80CC;&#x666F;&#x7CBE;&#x7075;</strong> &#x7684; <code>rect.y &gt;= &#x5C4F;&#x5E55;&#x7684;&#x9AD8;&#x5EA6;</code> &#x8BF4;&#x660E;&#x5DF2;&#x7ECF; <strong>&#x79FB;&#x52A8;&#x5230;&#x5C4F;&#x5E55;&#x4E0B;&#x65B9;</strong></li>
+<li>&#x5C06; <strong>&#x79FB;&#x52A8;&#x5230;&#x5C4F;&#x5E55;&#x4E0B;&#x65B9;&#x7684;&#x8FD9;&#x5F20;&#x56FE;&#x50CF;</strong> &#x8BBE;&#x7F6E;&#x5230; <strong>&#x5C4F;&#x5E55;&#x7684;&#x6B63;&#x4E0A;&#x65B9;</strong><ul>
+<li><code>rect.y = -rect.height</code>  </li>
+</ul>
+</li>
+</ol>
+<h3 id="12-&#x8BBE;&#x8BA1;&#x80CC;&#x666F;&#x7C7B;">1.2 &#x8BBE;&#x8BA1;&#x80CC;&#x666F;&#x7C7B;</h3>
+<p><img src="media/15025262948537/012_%E6%B4%BE%E7%94%9FBackground%E5%AD%90%E7%B1%BB.png" alt="012_&#x6D3E;&#x751F;Background&#x5B50;&#x7C7B;-w398"></p>
+<ul>
+<li><strong>&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;</strong><ul>
+<li>&#x76F4;&#x63A5;&#x6307;&#x5B9A; <strong>&#x80CC;&#x666F;&#x56FE;&#x7247;</strong></li>
+<li><code>is_alt</code> &#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;&#x53E6;&#x4E00;&#x5F20;&#x56FE;&#x50CF;<ul>
+<li><code>False</code> &#x8868;&#x793A; <strong>&#x7B2C;&#x4E00;&#x5F20;&#x56FE;&#x50CF;</strong>&#xFF0C;&#x9700;&#x8981;&#x4E0E;&#x5C4F;&#x5E55;&#x91CD;&#x5408;</li>
+<li><code>True</code> &#x8868;&#x793A; <strong>&#x53E6;&#x4E00;&#x5F20;&#x56FE;&#x50CF;</strong>&#xFF0C;&#x5728;&#x5C4F;&#x5E55;&#x7684;&#x6B63;&#x4E0A;&#x65B9;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>update()</strong> &#x65B9;&#x6CD5;<ul>
+<li>&#x5224;&#x65AD; <strong>&#x662F;&#x5426;&#x79FB;&#x52A8;&#x51FA;&#x5C4F;&#x5E55;</strong>&#xFF0C;&#x5982;&#x679C;&#x662F;&#xFF0C;&#x5C06;&#x56FE;&#x50CF;&#x8BBE;&#x7F6E;&#x5230; <strong>&#x5C4F;&#x5E55;&#x7684;&#x6B63;&#x4E0A;&#x65B9;</strong>&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0; <strong>&#x4EA4;&#x66FF;&#x6EDA;&#x52A8;</strong></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>&#x7EE7;&#x627F;</strong> &#x5982;&#x679C;&#x7236;&#x7C7B;&#x63D0;&#x4F9B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x5B50;&#x7C7B;&#x7684;&#x9700;&#x6C42;&#xFF1A;</p>
+<ul>
+<li>&#x6D3E;&#x751F;&#x4E00;&#x4E2A;&#x5B50;&#x7C7B;</li>
+<li>&#x5728;&#x5B50;&#x7C7B;&#x4E2D;&#x9488;&#x5BF9;&#x7279;&#x6709;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x91CD;&#x5199;&#x7236;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x8FDB;&#x884C;&#x6269;&#x5C55;</li>
+</ul>
+</blockquote>
+<h2 id="02-&#x663E;&#x793A;&#x6E38;&#x620F;&#x80CC;&#x666F;">02. &#x663E;&#x793A;&#x6E38;&#x620F;&#x80CC;&#x666F;</h2>
+<h3 id="21-&#x80CC;&#x666F;&#x7CBE;&#x7075;&#x7684;&#x57FA;&#x672C;&#x5B9E;&#x73B0;">2.1 &#x80CC;&#x666F;&#x7CBE;&#x7075;&#x7684;&#x57FA;&#x672C;&#x5B9E;&#x73B0;</h3>
+<ul>
+<li>&#x5728; <code>plane_sprites</code> &#x65B0;&#x5EFA; <code>Background</code> &#x7EE7;&#x627F;&#x81EA; <code>GameSprite</code></li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Background</span><span class="hljs-params">(GameSprite)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x6E38;&#x620F;&#x80CC;&#x666F;&#x7CBE;&#x7075;&quot;&quot;&quot;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update</span><span class="hljs-params">(self)</span>:</span>
+
+        <span class="hljs-comment"># 1. &#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;</span>
+        super().update()
+
+        <span class="hljs-comment"># 2. &#x5224;&#x65AD;&#x662F;&#x5426;&#x79FB;&#x51FA;&#x5C4F;&#x5E55;&#xFF0C;&#x5982;&#x679C;&#x79FB;&#x51FA;&#x5C4F;&#x5E55;&#xFF0C;&#x5C06;&#x56FE;&#x50CF;&#x8BBE;&#x7F6E;&#x5230;&#x5C4F;&#x5E55;&#x7684;&#x4E0A;&#x65B9;</span>
+        <span class="hljs-keyword">if</span> self.rect.y &gt;= SCREEN_RECT.height:
+            self.rect.y = -self.rect.height
+</code></pre>
+<h3 id="22-&#x5728;-planemainpy-&#x4E2D;&#x663E;&#x793A;&#x80CC;&#x666F;&#x7CBE;&#x7075;">2.2 &#x5728; <code>plane_main.py</code> &#x4E2D;&#x663E;&#x793A;&#x80CC;&#x666F;&#x7CBE;&#x7075;</h3>
+<ol>
+<li>&#x5728; <code>__create_sprites</code> &#x65B9;&#x6CD5;&#x4E2D;&#x521B;&#x5EFA; <strong>&#x7CBE;&#x7075;</strong> &#x548C; <strong>&#x7CBE;&#x7075;&#x7EC4;</strong></li>
+<li>&#x5728; <code>__update_sprites</code> &#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x8BA9; <strong>&#x7CBE;&#x7075;&#x7EC4;</strong> &#x8C03;&#x7528; <code>update()</code> &#x548C; <code>draw()</code> &#x65B9;&#x6CD5;</li>
+</ol>
+<blockquote>
+<p><code>__create_sprites</code> &#x65B9;&#x6CD5;</p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__create_sprites</span><span class="hljs-params">(self)</span>:</span>
+
+    <span class="hljs-comment"># &#x521B;&#x5EFA;&#x80CC;&#x666F;&#x7CBE;&#x7075;&#x548C;&#x7CBE;&#x7075;&#x7EC4;</span>
+    bg1 = Background(<span class="hljs-string">&quot;./images/background.png&quot;</span>)
+    bg2 = Background(<span class="hljs-string">&quot;./images/background.png&quot;</span>)
+    bg2.rect.y = -bg2.rect.height
+
+    self.back_group = pygame.sprite.Group(bg1, bg2)
+</code></pre>
+<blockquote>
+<p><code>__update_sprites</code> &#x65B9;&#x6CD5;</p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__update_sprites</span><span class="hljs-params">(self)</span>:</span>
+
+    self.back_group.update()
+    self.back_group.draw(self.screen)
+</code></pre>
+<h3 id="23-&#x5229;&#x7528;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;&#xFF0C;&#x7B80;&#x5316;&#x80CC;&#x666F;&#x7CBE;&#x7075;&#x521B;&#x5EFA;">2.3 &#x5229;&#x7528;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;&#xFF0C;&#x7B80;&#x5316;&#x80CC;&#x666F;&#x7CBE;&#x7075;&#x521B;&#x5EFA;</h3>
+<blockquote>
+<p>&#x601D;&#x8003; &#x2014;&#x2014; &#x4E0A;&#x4E00;&#x5C0F;&#x7ED3;&#x5B8C;&#x6210;&#x7684;&#x4EE3;&#x7801;&#x5B58;&#x5728;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x95EE;&#x9898;&#xFF1F;&#x80FD;&#x5426;&#x7B80;&#x5316;&#xFF1F;</p>
+</blockquote>
+<ul>
+<li>&#x5728;&#x4E3B;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x521B;&#x5EFA;&#x7684;<strong>&#x4E24;&#x4E2A;&#x80CC;&#x666F;&#x7CBE;&#x7075;</strong>&#xFF0C;<strong>&#x4F20;&#x5165;&#x4E86;&#x76F8;&#x540C;&#x7684;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</strong></li>
+<li>&#x521B;&#x5EFA; <strong>&#x7B2C;&#x4E8C;&#x4E2A; &#x80CC;&#x666F;&#x7CBE;&#x7075;</strong> &#x65F6;&#xFF0C;<strong>&#x5728;&#x4E3B;&#x7A0B;&#x5E8F;&#x4E2D;</strong>&#xFF0C;&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x7CBE;&#x7075;&#x7684;&#x56FE;&#x50CF;&#x4F4D;&#x7F6E;</li>
+</ul>
+<blockquote>
+<p>&#x601D;&#x8003; &#x2014;&#x2014; &#x7CBE;&#x7075; <strong>&#x521D;&#x59CB;&#x4F4D;&#x7F6E;</strong> &#x7684;&#x8BBE;&#x7F6E;&#xFF0C;&#x5E94;&#x8BE5; <strong>&#x7531;&#x4E3B;&#x7A0B;&#x5E8F;&#x8D1F;&#x8D23;</strong>&#xFF1F;&#x8FD8;&#x662F; <strong>&#x7531;&#x7CBE;&#x7075;&#x81EA;&#x5DF1;&#x8D1F;&#x8D23;</strong>&#xFF1F;</p>
+</blockquote>
+<p><strong>&#x7B54;&#x6848;</strong> &#x2014;&#x2014; <strong>&#x7531;&#x7CBE;&#x7075;&#x81EA;&#x5DF1;&#x8D1F;&#x8D23;</strong></p>
+<ul>
+<li>&#x6839;&#x636E;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BBE;&#x8BA1;&#x539F;&#x5219;&#xFF0C;&#x5E94;&#x8BE5;&#x5C06;&#x5BF9;&#x8C61;&#x7684;&#x804C;&#x8D23;&#xFF0C;&#x5C01;&#x88C5;&#x5230;&#x7C7B;&#x7684;&#x4EE3;&#x7801;&#x5185;&#x90E8;</li>
+<li>&#x5C3D;&#x91CF;&#x7B80;&#x5316;&#x7A0B;&#x5E8F;&#x8C03;&#x7528;&#x4E00;&#x65B9;&#x7684;&#x4EE3;&#x7801;&#x8C03;&#x7528;</li>
+</ul>
+<p><img src="media/15025262948537/012_%E6%B4%BE%E7%94%9FBackground%E5%AD%90%E7%B1%BB.png" alt="012_&#x6D3E;&#x751F;Background&#x5B50;&#x7C7B;-w398"></p>
+<ul>
+<li><strong>&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;</strong><ul>
+<li>&#x76F4;&#x63A5;&#x6307;&#x5B9A; <strong>&#x80CC;&#x666F;&#x56FE;&#x7247;</strong></li>
+<li><code>is_alt</code> &#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;&#x53E6;&#x4E00;&#x5F20;&#x56FE;&#x50CF;<ul>
+<li><code>False</code> &#x8868;&#x793A; <strong>&#x7B2C;&#x4E00;&#x5F20;&#x56FE;&#x50CF;</strong>&#xFF0C;&#x9700;&#x8981;&#x4E0E;&#x5C4F;&#x5E55;&#x91CD;&#x5408;</li>
+<li><code>True</code> &#x8868;&#x793A; <strong>&#x53E6;&#x4E00;&#x5F20;&#x56FE;&#x50CF;</strong>&#xFF0C;&#x5728;&#x5C4F;&#x5E55;&#x7684;&#x6B63;&#x4E0A;&#x65B9;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>&#x5728; <code>plane_sprites.py</code> &#x4E2D;&#x5B9E;&#x73B0; <code>Background</code> &#x7684; <strong>&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;</strong></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, is_alt=False)</span>:</span>
+
+    image_name = <span class="hljs-string">&quot;./images/background.png&quot;</span>
+    super().__init__(image_name)
+
+    <span class="hljs-comment"># &#x5224;&#x65AD;&#x662F;&#x5426;&#x4EA4;&#x66FF;&#x56FE;&#x7247;&#xFF0C;&#x5982;&#x679C;&#x662F;&#xFF0C;&#x5C06;&#x56FE;&#x7247;&#x8BBE;&#x7F6E;&#x5230;&#x5C4F;&#x5E55;&#x9876;&#x90E8;</span>
+    <span class="hljs-keyword">if</span> is_alt:
+        self.rect.y = -self.rect.height
+</code></pre>
+<ul>
+<li>&#x4FEE;&#x6539; <code>plane_main</code> &#x7684; <code>__create_sprites</code> &#x65B9;&#x6CD5;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x521B;&#x5EFA;&#x80CC;&#x666F;&#x7CBE;&#x7075;&#x548C;&#x7CBE;&#x7075;&#x7EC4;</span>
+bg1 = Background()
+bg2 = Background(<span class="hljs-keyword">True</span>)
+
+self.back_group = pygame.sprite.Group(bg1, bg2)
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../04_Project/03_游戏框架搭建.html" class="navigation navigation-prev " aria-label="Previous page: 游戏框架搭建"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../04_Project/05_敌机出场.html" class="navigation navigation-next " aria-label="Next page: 敌机出场"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
